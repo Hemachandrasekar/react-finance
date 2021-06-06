@@ -1,12 +1,13 @@
 import React from 'react';
-import { useAuth0 } from '@auth0/auth0-react';
-import LogoutButton from './Logout';
-import Signin from './Signin';
 
-const Home = () => {
-  const { isAuthenticated } = useAuth0();
+import Header from '../Components/Header';
+import Footer from '../Components/Footer';
 
-  return isAuthenticated ? <LogoutButton /> : <Signin />;
-};
+const Home = () => (
+  <>
+    <Header />
+    <Footer />
+  </>
+);
 
 export default Home;
