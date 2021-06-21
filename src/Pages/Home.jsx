@@ -1,13 +1,5 @@
 import React from 'react';
 
-import Header from '../Components/Header';
-import Footer from '../Components/Footer';
-
-const Home = () => (
-  <>
-    <Header />
-    <Footer />
-  </>
-);
+const Home = () => <h2 className="flex justify-center "> Home page</h2>;
 
 export default Home;
